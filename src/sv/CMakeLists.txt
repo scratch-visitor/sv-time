@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.12)
+
+FILE(GLOB_RECURSE FILE_SOURCES "*.cpp")
+FILE(GLOB_RECURSE FILE_HEADERS "*.hpp")
+
+add_library(${PROJECT_NAME}
+  ${FILE_SOURCES}
+  ${FILE_HEADERS}
+)
